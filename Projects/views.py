@@ -4,7 +4,6 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.urls import reverse
 from .models import *
-import rest_framework
 import datetime
 import random
 import math
