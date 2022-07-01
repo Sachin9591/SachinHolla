@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<!-- index-754:31-->
+<head>
+	<!--===== Meta Tag =====-->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="Runaway - Personal Portfolio HTML Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
+	<meta name="author" content="root">
+
+	 <!--	Css Links
+    ==================================================-->
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+     <link rel="stylesheet" href="{% static 'fonts/flaticon.css' %}">
+     <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <link rel="stylesheet" href="{% static 'css/color.css' %}" id="color-change">
+
+
+     <!-- Favicon 
+    ==================================================-->
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon.ico' %}">
+
+      <!--	Title
+    ==================================================-->
+	<title>Sachin Holla</title>
+
+</head>
+
+<body id="top" class="page-load">
+	<!--	Start Back to top
+	=================================================-->
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
+	<!--	End Back to top
+	==================================================-->
+
+	<!--	Preloader
+	==================================================-->
+	<div class="preloader">
+		<div class="lds-css ng-scope">
+			<div class="lds-spinner" style="100%;height:100%">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<!-- Color Settings Start
+	==================================================-->
+	<div class="color-panel">
+		<div class="on-panel color_white bg_primary">
+			<div class="text-center icon-spinner">
+			  <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+			</div>
+		</div>
+		<div class="panel-box">
+			<span class="panel-title">Theme Colors</span>
+			<ul class="color-box">
+				<li class="default" data-name="default" data-path="{% static 'css/color.css' %}" data-image="{% static 'images/logo/1.png' %}" data-target="{% static 'images/logo/1.png' %}"></li>
+				<li class="color_2" data-name="color_2" data-path="{% static 'css/color/color-1.css' %}" data-image="{% static 'images/logo/2.png' %}" data-target="{% static 'images/logo/2.png' %}"></li>
+				<li class="color_3" data-name="color_3" data-path="{% static 'css/color/color-2.css' %}" data-image="{% static 'images/logo/3.png' %}" data-target="{% static 'images/logo/3.png' %}"></li>
+				<li class="color_4" data-name="color_4" data-path="{% static 'css/color/color-3.css' %}" data-image="{% static 'images/logo/4.png' %}" data-target="{% static 'images/logo/4.png' %}"></li>
+				<li class="color_5" data-name="color_5" data-path="{% static 'css/color/color-4.css' %}" data-image="{% static 'images/logo/5.png' %}" data-target="{% static 'images/logo/5.png' %}"></li>
+				<li class="color_6" data-name="color_6" data-path="{% static 'css/color/color-5.css' %}" data-image="{% static 'images/logo/6.png' %}" data-target="{% static 'images/logo/6.png' %}"></li>
+				<li class="color_7" data-name="color_7" data-path="{% static 'css/color/color-6.css' %}" data-image="{% static 'images/logo/7.png' %}" data-target="{% static 'images/logo/7.png' %}"></li>
+				<li class="color_8" data-name="color_8" data-path="{% static 'css/color/color-7.css' %}" data-image="{% static 'images/logo/8.png' %}" data-target="{% static 'images/logo/8.png' %}"></li>
+				<li class="color_9" data-name="color_9" data-path="{% static 'css/color/color-8.css' %}" data-image="{% static 'images/logo/9.png' %}" data-target="{% static 'images/logo/9.png' %}"></li>
+				<li class="color_10" data-name="color_10" data-path="{% static 'css/color/color-9.css' %}" data-image="{% static 'images/logo/10.png' %}" data-target="{% static 'images/logo/10.png' %}"></li>
+				<li class="color_11" data-name="color_11" data-path="{% static 'css/color/color-10.css' %}" data-image="{% static 'images/logo/11.png' %}" data-target="{% static 'images/logo/11.png' %}"></li>
+				<li class="color_12" data-name="color_12" data-path="{% static 'css/color/color-11.css' %}" data-image="{% static 'images/logo/12.png' %}" data-target="{% static 'images/logo/12.png' %}"></li>
+				<li class="color_13" data-name="color_13" data-path="{% static 'css/color/color-12.css' %}" data-image="{% static 'images/logo/13.png' %}" data-target="{% static 'images/logo/13.png' %}"></li>
+				<li class="color_14" data-name="color_14" data-path="{% static 'css/color/color-13.css' %}" data-image="{% static 'images/logo/14.png' %}" data-target="{% static 'images/logo/14.png' %}"></li>
+			</ul>
+		</div>
+		<div class="switcher_layout">
+			<span class="layout_title">Layout Style</span>
+			<div class="radio_check">
+				<input type="checkbox" id="layout_type" name="layout" value="Yes">
+				<label class="bg_default text-left" for="layout_type"><span class="white_color">Full</span><span class="secondary_color">Box</span></label>
+			</div>
+		</div>
+		<div class="template_style">
+			<span class="layout_title">Template Style</span>
+			<ul>
+				<li><a class="btn_link" href="{% url 'home' %}" target="blank">White Version</a></li>
+				<li><a class="btn_link" href="{% url 'index-8' %}" target="blank">Black Version</a></li>
+			</ul>
+		</div>
+		<div class="box_bg_style">
+			<span class="layout_title">Background pattern</span>
+			<div class="select_bg">
+				<ul>
+					<li><input type="radio" name="radio" id="patrn1" value="pattern_1" /><label for="patrn1" class="radios pattern1"></label></li>
+					<li><input type="radio" name="radio" id="patrn2" value="pattern_2" /><label for="patrn2" class="radios pattern2"></label></li>
+					<li><input type="radio" name="radio" id="patrn3" value="pattern_3" /><label for="patrn3" class="radios pattern3"></label></li>
+					<li><input type="radio" name="radio" id="patrn4" value="pattern_4" /><label for="patrn4" class="radios pattern4"></label></li>
+					<li><input type="radio" name="radio" id="patrn5" value="pattern_5" /><label for="patrn5" class="radios pattern5"></label></li>
+				</ul>
+			</div>
+			<span class="layout_title">Background pattern</span>
+			<div class="select_bg">
+				<ul>
+					<li><input type="radio" name="radio" id="bg_img1" value="body_bg_1" /><label for="bg_img1" class="radios body_image1"></label></li>
+					<li><input type="radio" name="radio" id="bg_img2" value="body_bg_2" /><label for="bg_img2" class="radios body_image2"></label></li>
+					<li><input type="radio" name="radio" id="bg_img3" value="body_bg_3" /><label for="bg_img3" class="radios body_image3"></label></li>
+					<li><input type="radio" name="radio" id="bg_img4" value="body_bg_4" /><label for="bg_img4" class="radios body_image4"></label></li>
+					<li><input type="radio" name="radio" id="bg_img5" value="body_bg_5" /><label for="bg_img5" class="radios body_image5"></label></li>
+					<li><input type="radio" name="radio" id="bg_img6" value="body_bg_6" /><label for="bg_img6" class="radios body_image6"></label></li>
+					<li><input type="radio" name="radio" id="bg_img7" value="body_bg_7" /><label for="bg_img7" class="radios body_image7"></label></li>
+					<li><input type="radio" name="radio" id="bg_img8" value="body_bg_8" /><label for="bg_img8" class="radios body_image8"></label></li>
+					<li><input type="radio" name="radio" id="bg_img9" value="body_bg_9" /><label for="bg_img9" class="radios body_image9"></label></li>
+					<li><input type="radio" name="radio" id="bg_img10" value="body_bg_10" /><label for="bg_img10" class="radios body_image10"></label></li>
+				</ul>
+			</div>
+			<div class="select_bg">
+				<ul>
+					<li><input type="checkbox" name="runaway" id="bg_over" value="" /> Overlay</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--  Color Settings End
+	==============================================-->
+
+<!-- Wrapper Start 
+==================================================-->
+<div id="page_wrapper">
+	<div class="row">
+	<!-- Start Nav Menu 
+	==============================================-->
+	<header class="main_nav">
+		<div class="container">
+			<nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light w-100"> 
+				<a class="navbar-brand" href="#top"><img class="nav-logo" src="{% static 'images/logo/1.png' %}" alt="logo"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+					  <li class="nav-item"><a class="nav-link active" href="#top" data-scroll="top">Home<span class="sr-only">(current)</span></a></li>
+					  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+					  <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+					  <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+					  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>	
+					  <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>	
+<!--					  <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>	-->
+					  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>	
+					</ul>
+				</div>		
+			</nav>
+		</div>	
+	</header>
+	<!-- End Nav Menu
+	==================================================-->
+	
+	<!--	Start Main Banner 
+	==================================================-->
+	<section id="main_banner" class=" banner_water_effect background3 overlay_one">
+		<div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-12 col-lg-12 home-content text-left">
+                    <div class="mainbanner_content">
+                        <span class="pb_5 banner_title color_white">I Am Sachin Kumar B!</span>
+                        <h1 class="cd-headline clip is-full-width text-uppercase">
+                            <span class="color_white">I am a</span>
+                            <span class="cd-words-wrapper color_default">
+                                <b class="is-visible">Software Engineer.</b>
+                                <b>Django Developer.</b>
+                                <b>.NET Developer.</b>
+                            </span>
+                        </h1>
+                        <p class="color_white mb_30">Hardworking software development professional driven to increase team effectiveness. Focused on usability and performance improvements.</p>
+                        {% for cv in Resume_CV %}
+                        <a class="btn btn-default" href="{{cv.resumeFile.url}}" download="{{cv.resumeFile.url}}">Download CV</a>
+                        {% endfor %}
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </section>
+	<!--	End Main Banner 
+	==================================================-->
+	<!--	Start About
+	===================================================-->
+	<section id="about" class="py_80 full_row bg_white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+	                    <h2 class="title text-uppercase"><span class="line_double mx-auto color_default">about</span>about myself</h2>
+	                    <span class="sub_title">Myself Sachin Kumar B and I’m Software developer for up to 4.2 years now.</span>
+	                </div>
+				</div>
+			</div>
+			<div class="about_one">
+				<div class="row">
+					<div class="col-md-7 col-lg-7">
+						<div class="myself color_secondery wow animated fadeInLeft">
+							<p>I graduated from Mangalore University, where I made the Fly-Gym project, with a major in Embedded development. After that, I first got into the industry working as an Software Engineer at Brevera Technologies. There I provided technical support with production department, helped in managing projects, and created a new voltage stabilizers.</p>
+							
+							<p>After that, I worked as a Senior Software Engineer for Novac Technology Solutions that provided .NET web development for about 1 year 10 months. There, I personally managed a team of software projects, and made sure everything went smoothly in terms of business goals, deadlines and more. In my downtime, I enjoy reading about Machine Learning and JavaScript. Moving forward, I hope to expand my experience across different industries. </p>
+						</div>
+						<div class="personal_info">
+							<div class="row">
+								<div class="col-md-12 col-lg-6">
+									<ul>
+										<li><span class="color_secondery">Name :</span> Sachin Kumar B</li>
+										<li><span class="color_secondery">Email :</span> skumar10031993@gmail.com</li>
+										<li><span class="color_secondery">Phone :</span> +91 9591960073</li>
+										<li><span class="color_secondery">Alternate Phone :</span> +91 9483483975</li>
+									</ul>
+								</div>
+								<div class="col-md-12 col-lg-6">
+									<ul>
+										<li><span class="color_secondery">Date of Birth :</span> 10 March 1993</li>
+										<li><span class="color_secondery">Blood Group :</span> O-</li>
+										<li><span class="color_secondery">Address :</span> #3-1014, ASHEERVAD, Samethadka, Puttur Kasaba, Puttur. D.K. - 574201</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-lg-5">
+						<div class="profile_img personal_video wow animated fadeInRight">
+							<img src="{% static 'images/about/03.png' %}" alt="image">
+							<div class="iconround"><a class="video-popup" href="https://vimeo.com/134660574" title="video popup">
+							<i class="fa fa-play" aria-hidden="true"></i></a></div>
+							<div class="loader">
+								<div class="loader-inner ball-scale-multiple">
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--	End About
+	===================================================-->
+	<!--	Start Skill
+	===================================================-->
+	<section id="skill" class="py_80 bg_secondery full_row">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+	                    <h2 class="title text-uppercase"><span class="line_double mx-auto color_default">skill</span>Technical skill</h2>
+	                    <span class="sub_title">Designing a single and multiple pages web applications using technical skills.</span>
+	                </div>
+				</div>
+			</div>
+			<div class="my_skill">
+				<div class="row">
+					<div class="col-md-12 col-lg-6">
+						<div class="about_myskill color_secondery wow animated slideInLeft">
+							<h2 class="color_primary">Some talk about my professional technical skill</h2>
+							<p class="pt_15">To secure a challenging position in an IT company by utilizing my strong technical, analytical, and team-building skills.</p>
+							<p class="pt_15">Dedicated software professional with experience in end-user product development, testing designing and test cases.</p>
+							<p class="pt_15">Have strong knowledge in IT services with successfully proven abilities in design and implementation.</p>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6">
+						<div class="skill-progress wow animated slideInRight">
+							{% for tSkills in TechSkills_Det %}
+		                    <div class="prgs-bar fact-counter"> <span>{{tSkills.tSkillTitle}}</span>
+		                        <div class="progress count wow" data-wow-duration="0ms">
+		                            <div class="skill-percent"><span class="count-num" data-speed="3000" data-stop="{{tSkills.tSkillPercent}}">0</span>%</div>
+		                            <div class="progress-bar" role="progressbar" aria-valuenow="{{tSkills.tSkillPercent}}" aria-valuemax="100"> </div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--	End Skill
+	===================================================-->
+	<!--	Start Experience and Projects
+	===================================================-->
+	<div class="experience background2 overlay_two py_60 full_row">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="fact-counter">
+						<div class="row">
+							<div class="col-md-4 col-lg-4">
+							    <div class="counter count wow text-center" data-wow-duration="300ms">
+							    	<span class="flaticon-man-working-on-a-laptop-from-side-view"></span>
+					            	<div class="counting_digit color_default mt_15"> <h2 class="count-num" data-speed="3000" data-stop="4">0</h2><span>+</span>
+					            	</div>
+					            	<h3 class="color_white mt_15">Years of Experience</h3>
+					          	</div>
+							</div>
+							<div class="col-md-4 col-lg-4">
+							    <div class="counter count wow text-center" data-wow-duration="300ms">
+							    	<span class="flaticon-half-time-work"></span>
+					            	<div class="counting_digit color_default mt_15"> <h2 class="count-num" data-speed="3000" data-stop="15">0</h2><span>+</span>
+					            	</div>
+					            	<h3 class="color_white mt_15">Projects Done</h3>
+					          	</div>
+							</div>
+							<div class="col-md-4 col-lg-4">
+							    <div class="counter count wow text-center" data-wow-duration="300ms">
+							    	<span class="flaticon-happy"></span>
+					            	<div class="counting_digit color_default mt_15"><h2 class="count-num" data-speed="3000" data-stop="25">0</h2><span>+</span>
+					            	</div>
+					            	<h3 class="color_white mt_15">Happy Clients</h3>
+					          	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--	End Experience and Projects
+	===================================================-->
+	<!--	Start Experience
+	===================================================-->
+	<section id="experience" class="py_80 full_row bg_white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+	                    <h2 class="title text-uppercase"><span class="line_double mx-auto color_default">experience</span>What i do</h2>
+	                    <span class="sub_title">Expertise in Software Development Life Cycle. Hands-On experience in Django web applications with Rest API and Firebase for realtime applications.</span>
+	                </div>
+				</div>
+				<div class="services_item1">
+					<div class="col-md-12 col-lg-12">
+						<div class="row">
+							{% for serves in Serv_Details %}
+							<div class="col-md-6 col-lg-4">
+								<div class="service_two text-center pt_15 mb_30 wow animated slideInUp">
+									<div class="srv_item_number color_lightgray"><strong>{{serves.servID}}.</strong></div>
+									<h3 class="p_20 text-uppercase color_primary">{{serves.servHead}}</h3>
+									<div class="srv_icon color_white"><span class="{{serves.servClassIcon}}"></span></div>
+									<p>{{serves.servDescr}}</p>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--	End Experience
+	===================================================-->
+	<!--	Start Portfolio
+	===================================================-->
+	<section id="portfolio" class="py_80 bg_secondery full_row">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+	                    <h2 class="title text-uppercase"><span class="line_double mx-auto color_default">portfolio</span>Recent Projects</h2>
+	                    <span class="sub_title">Images of recent projects are been listed below</span>
+	                </div>
+				</div>
+				<div class="col-md-12 col-lg-12">
+					<div class="my_portfolio" id="tab-panel"> 
+              			<!--Filter-->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="filters mb_30 w-100 text-center">
+									<ul class="filter-tabs mx-auto d-inline-block">
+										<li class="active filter" data-role="button" data-filter="all">All</li>
+										<li class="filter" data-role="button" data-filter=".design">Web Design</li>
+										<li class="filter" data-role="button" data-filter=".wordpress">Embedded Development</li>
+										<li class="filter" data-role="button" data-filter=".development">Web Development</li>
+										<li class="filter" data-role="button" data-filter=".branding">Branding</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+			              
+						<div class="filter-list">
+							<div class="portfolio-items">
+								<div class="row">
+								  	<div class="column mix mix_all graphic development design mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/01.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/01.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Web Development,</li>
+															<li>Web Design</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all graphic branding wordpress mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/02.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/02.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Branding,</li>
+															<li>Embedded Development</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all wordpress branding mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/03.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/03.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Branding,</li>
+															<li>Embedded Development</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all graphic wordpress branding mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/04.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/04.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Branding,</li>
+															<li>Embedded Development</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all graphic wordpress branding mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/05.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/05.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Branding,</li>
+															<li>Embedded Development</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all development wordpress mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/06.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/06.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Embedded Development,</li>
+															<li>Web Development</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all development wordpress mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/07.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/07.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Embedded Development,</li>
+															<li>Web Development</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all branding wordpress mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/08.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/08.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Embedded Development,</li>
+															<li>Branding</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="column mix mix_all design development mb_30 col-md-4 col-lg-4">
+										<div class="default-portfolio-item">
+											<a href="{% static 'images/portfolio/09.jpg' %}" data-fancybox="gallery">
+												<img src="{% static 'images/portfolio/09.jpg' %}" alt="image" />
+												<div class="overlay-box">
+													<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+													<div class="tag">
+														<ul>
+															<li>Web Design,</li>
+															<li>Web Development</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+			        </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--	End Portfolio
+	===================================================-->
+	<!--	Start Testimonial
+	===================================================-->
+	<section id="testimonial" class="py_80 full_row bg_white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+	                    <h2 class="title text-uppercase"><span class="line_double mx-auto color_default">testimonial</span>What Client Say’s</h2>
+	                    <span class="sub_title">Will power to achieve any goal, self-respect, curiosity etc. Leadership team working and ability to do work under pressure.</span>
+	                </div>
+				</div>
+				<div class="col-md-12 col-lg-12">
+    				<div class="testimonial_item owl-carousel wow animated slideInUp">
+						{% for tMon in Testimonial_Det %}
+    					<div class="member_feedback p_30 color_secondery">
+							<div class="client_img"><img src="{{tMon.testMonImage.url}}" alt="image"></div>
+							<div class="star d-inline-block mt_30 color_default">
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+							<h5 class="color_primary mb_15">{{tMon.testMonTitle}}</h5>
+							<p>{{tMon.testMonDescr}}</p>
+						</div>
+						{% endfor %}
+    				</div>
+    			</div>
+			</div>
+		</div>
+	</section>
+	<!--	End Testimonial
+	===================================================-->
+<!--	&lt;!&ndash;	Start Blog-->
+<!--	===================================================&ndash;&gt;-->
+<!--	<section id="blog" class="py_80 bg_secondery full_row">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-md-12 col-lg-12">-->
+<!--					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">-->
+<!--	                    <h2 class="title text-uppercase"><span class="line_double mx-auto color_default">blog</span>What’s News</h2>-->
+<!--	                    <span class="sub_title">Interdum a etiam sanitise vehicular portal. Mass feels eros Guam bandit nulls dolor habitat. Ullamcorper quins Ironware et proin pellentesque.</span>-->
+<!--	                </div>-->
+<!--				</div>-->
+<!--				<div class="col-md-12 col-lg-12">-->
+<!--					<div class="blog_grid_1 wow animated slideInUp">-->
+<!--						<div class="row">-->
+<!--							{% for blDet in Blogs_Det %}-->
+<!--							<div class="col-md-12 col-lg-4">-->
+<!--								<div class="blog_item">-->
+<!--									<div class="comments">-->
+<!--										<i class="fa fa-comment" aria-hidden="true"></i>-->
+<!--										<span class="color_white">{{blDet.blCommentsNo}}</span>-->
+<!--									</div>-->
+<!--									<div class="blog_img overlay_one"><img src="{{blDet.blImages.url}}" alt="image"></div>-->
+<!--									<div class="blog_content bg_white color_secondery">-->
+<!--										<div class="blog_title">-->
+<!--											<a class="color_primary" href="{% url 'blog-details' %}"><h5>{{blDet.blTitle}}</h5></a>-->
+<!--										</div>-->
+<!--										<p class="mt_15 mb_30">{{blDet.blDescr}}</p>-->
+<!--										-->
+<!--										<div class="admin">-->
+<!--											<img src="{% static 'images/about/02.jpg' %}" alt="image">-->
+<!--											<span class="color_white">By - {{blDet.blAuthor}}</span>-->
+<!--										</div>-->
+<!--										<div class="date float-right color_primary">{{blDet.blPublishedDay}} {{blDet.blPublishedMonth}} {{blDet.blPublishedYear}}</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							{% endfor %}-->
+<!--						</div>-->
+<!--						<div class="mx-auto text-center mt_60"><a class="btn btn-default" href="{% url 'blog' %}">View Blog</a></div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+<!--	&lt;!&ndash;	End Blog-->
+<!--	===================================================&ndash;&gt;-->
+	<!--	Start Contact
+	===================================================-->
+	<section id="contact" class="py_80 full_row bg_white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="section_title_1 text-center mx-auto pb_60 wow animated slideInUp">
+	                    <h2 class="title text-uppercase"><span class="line_double mx-auto color_default">contact</span>Get In Touch</h2>
+	                    <span class="sub_title">For any queries please feel free to contact</span>
+	                </div>
+				</div>
+				<div class="col-md-12 col-lg-12">
+					<div class="row">
+						<div class="col-md-4 col-lg-4">
+							<div class="contact_info wow animated fadeInLeft">
+		    					<ul>
+		    						<li>
+		    							<div class="contact_text">
+		    								<h6 class="font-weight-bold color_primary">Email</h6>
+		    								<span class="color_secondery">skumar10031993@gmail.com</span>
+		    							</div>
+		    						</li>
+		    						<li>
+		    							<div class="contact_text">
+		    								<h6 class="font-weight-bold color_primary">Phone</h6>
+		    								<span class="color_secondery">+91 9591960073</span>
+		    							</div>
+		    						</li>
+		    						<li>
+		    							<div class="contact_text">
+		    								<h6 class="font-weight-bold color_primary">Address</h6>
+		    								<span class="color_secondery">#3-1014, ASHEERVAD, Samethadka, Puttur Kasaba, Puttur. D.K. - 574201.</span>
+		    							</div>
+		    						</li>
+		    						<li>
+		    							<div class="contact_text">
+		    								<h6 class="font-weight-bold color_primary">Website</h6>
+		    								<span class="color_secondery">www.sachinholla.in</span>
+		    							</div>
+		    						</li>
+		    					</ul>
+		    				</div>
+		    				<div class="socal_media_2 mt_15 d-inline-block">
+					            <ul>
+					                <li><a href="https://www.facebook.com/sachin.kumar.b.14" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					                <li><a href="https://www.twitter.com/sachinkumarb007" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					                <li><a href="https://github.com/sachin9591" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					                <li><a href="https://in.linkedin.com/in/sachin-kumar-b-10031993" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					                <li><a href="https://www.instagram.com/sachin_holla" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					            </ul>
+					        </div>
+						</div>
+						<div class="col-md-8 col-lg-8">
+							<form class="form contact_message wow animated fadeInRight" id="contact-form" action="{% url 'ct_msg_send' %}" method="post">
+								{% csrf_token %}
+								<div class="row">
+									<div class="col-md-6 col-lg-6">
+										<div class="form-group">
+											<input class="form-control" type="text" name="name" placeholder="Your Name" />
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-6">
+										<div class="form-group">
+											<input class="form-control" type="email" name="email" placeholder="Email Address" />
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="form-group">
+										  <input class="form-control" type="text" name="subject" placeholder="Subject"/>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="form-group">
+											<textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
+										</div>							
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="form-group">
+											<input class="btn btn-default" id="send" value="Send Message" type="submit"/>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-12">
+										<div class="error-handel">
+											<div id="success">Your email sent Successfully, Thank you.</div>
+											<div id="error"> Error occurred while sending email. Please try again later.</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--	End Contact
+	===================================================-->
+	<!--	Start Footer
+	===================================================-->
+	<footer class="p_20 color_primary bg_secondery text-center full_row">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="copyright"><p><a href="https://www.sachinholla.in" target="_blank">Sachin Holla</a></p></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--	End Footer
+	===================================================-->
+	</div>
+</div>
+<!--	Wrapper End
+=======================================================-->
+	<!--	Js Links
+	===================================================-->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script>
+	<script>
+		$(document).ready(function() {
+		//=========================================
+		//  Water Effect
+		//=========================================
+		
+			$('.banner_water_effect').ripples({
+			  resolution: 256,
+			  dropRadius: 20,
+			  perturbance: 0.03,
+			  interactive:true,
+			});
+		//  Smoothscroll js
+		//=========================================
+		  $("a").on('click', function(event) {
+
+			  if (this.hash !== "") {
+				event.preventDefault();
+			  
+				var hash = this.hash;
+
+				$('html, body').animate({
+				  scrollTop: $(hash).offset().top 
+				}, 1000, function(){
+			 
+				  window.location.hash = hash;
+				});
+			  }
+			});
+		 });
+	</script>
+</body>
+
+<!-- index-754:31-->
+</html>
