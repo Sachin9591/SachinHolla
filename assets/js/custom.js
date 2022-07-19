@@ -2,11 +2,11 @@
   
 //    Template Name: Runaway - Personal Portfolio HTML Template
 //    Version: 2.1.1
-//    Author: themetrading
+//    Author: theme trading
 //    Email: themetrading@gmail.com
-//    Developed By: themetrading
+//    Developed By: theme trading
 //    First Release: 08 February 2019
-//    Author URL: www.themetrading.com
+//    Author URL: www.theme-trading.com
 
 //=====================================================================================
  
@@ -229,7 +229,7 @@
     wow.init();
   }
 
-   // When document is Scrollig, do
+   // When document is Scrolling, do
  
  $(window).on('scroll', function() {
   factCounter();
@@ -295,7 +295,7 @@ if($contact.length){
                 $('#send').attr({'disabled' : 'true', 'value' : 'Sending...' });
                 $.ajax({
                     type: "POST",
-                    url: "email.php",
+                    url: "ct_msg_send/",
                     data: $(form).serialize(),
                     success: function () {
                         $('#send').removeAttr('disabled').attr('value', 'Send');
