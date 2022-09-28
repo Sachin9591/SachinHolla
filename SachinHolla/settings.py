@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '-)-a196lykv(^xr6wi%uit&^jpfj$h^x82@ab+^1oyj!b*j60o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.sachinholla.in', 'sachinholla.in']      # 192.168.190.221, 192.168.210.221
+ALLOWED_HOSTS = ['www.sachinholla.in', 'sachinholla.in', '192.168.255.221']      # 192.168.190.221, 192.168.210.221
 
 
 # Application definition
@@ -137,10 +137,11 @@ EMAIL_USE_TLS = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+if DEBUG:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -94,10 +94,14 @@
 		</div>
 		<div class="template_style">
 			<span class="layout_title">Template Style</span>
-			<ul>
-				<li><a class="btn_link" href="{% url 'home' %}" target="blank">White Version</a></li>
-				<li><a class="btn_link" href="{% url 'index-8' %}" target="blank">Black Version</a></li>
-			</ul>
+			<div class="radio_check">
+				<input type="checkbox" id="template_type" name="template" value="Yes">
+				<label class="bg_default text-left" for="template_type"><span class="white_color">Day</span><span class="secondary_color">Night</span></label>
+			</div>
+<!--			<ul>-->
+<!--				<li><a class="btn_link" href="{% url 'home' %}" target="blank">White Version</a></li>-->
+<!--				<li><a class="btn_link" href="{% url 'index-8' %}" target="blank">Black Version</a></li>-->
+<!--			</ul>-->
 		</div>
 		<div class="box_bg_style">
 			<span class="layout_title">Background pattern</span>

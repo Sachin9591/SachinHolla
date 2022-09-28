@@ -2633,7 +2633,41 @@ jQuery(document).ready(function($){
 			}
 		});
 		
-		
+
+
+		// Template select with slide button
+		$("#template_type").each( function() {
+			var name = $(this).attr('name');
+			if ($.cookie(name) && $.cookie(name) == "templateLayout") {
+				$(this).prop('checked', true);
+//				$('#page_wrapper').addClass('template-layout');
+				window.open('index-8');
+			}
+		});
+
+		$("#template_type").change(function() {
+			var name = $(this).attr('name');
+			if($(this).prop('checked')){
+				$.cookie(name, 'templateLayout', { path: '/', expires: 365 });
+			}
+			else {
+				$.cookie(name, '', { path: '/', expires: 365 });
+			}
+		});
+
+		$('#template_type').on('click', function(){
+			if($(this).is(':checked')){
+//				$('#page_wrapper').addClass('template-layout');
+				window.open('index-8');
+				location.reload();
+			}
+			else {
+//				$('#page_wrapper').removeClass('template-layout');
+                window.open('/');
+				location.reload();
+			}
+		});
+
 		// Background select with check
 		$(".box_bg_style li input[type='radio']").on('click', function(){
 			$('body').removeAttr('class');

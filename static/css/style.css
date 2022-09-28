@@ -1790,14 +1790,14 @@ Slider Animation
 .radio_check input[type="checkbox"]:checked + label{
   transform:translateX(-56px)
 }
-.radio_check label span {
+.radio_check label span, .radio_check label a {
   line-height: 44px;
   color: #fff
 }
-.radio_check label span:first-child {
+.radio_check label span:first-child, .radio_check label a:first-child {
   float:left
 }
-.radio_check label span:last-child {
+.radio_check label span:last-child, .radio_check label a:last-child {
   float:right
 }
 .radio_check label::before {
