@@ -2641,7 +2641,7 @@ jQuery(document).ready(function($){
 			if ($.cookie(name) && $.cookie(name) == "templateLayout") {
 				$(this).prop('checked', true);
 //				$('#page_wrapper').addClass('template-layout');
-				window.open('index-8');
+//				window.open('index-8', '_self');
 			}
 		});
 
@@ -2658,13 +2658,13 @@ jQuery(document).ready(function($){
 		$('#template_type').on('click', function(){
 			if($(this).is(':checked')){
 //				$('#page_wrapper').addClass('template-layout');
-				window.open('index-8');
-				location.reload();
+				window.open('index-8', '_self');
+//				location.reload();
 			}
 			else {
 //				$('#page_wrapper').removeClass('template-layout');
-                window.open('/');
-				location.reload();
+                window.open('/', '_self');
+//				location.reload();
 			}
 		});
 

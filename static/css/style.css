@@ -2236,8 +2236,8 @@ label.radios {
   }
   .profile_img.personal_video .iconround:before{
     left: 6px;
-      width: 80px;
-      height: 80px;
+    width: 80px;
+    height: 80px;
   }
   .profile_img.personal_video a{
     width: 50px;
