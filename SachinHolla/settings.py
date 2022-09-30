@@ -23,13 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '-)-a196lykv(^xr6wi%uit&^jpfj$h^x82@ab+^1oyj!b*j60o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['www.sachinholla.in', 'sachinholla.in', '192.168.32.221']      # 192.168.190.221, 192.168.210.221
+ALLOWED_HOSTS = ['www.sachinholla.in', 'sachinholla.in']      # 192.168.190.221, 192.168.210.221
 
 
 # Application definition
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
